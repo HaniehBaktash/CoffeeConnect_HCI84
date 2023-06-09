@@ -1,8 +1,6 @@
-from flask import Flask, render_template, request
 
-app = Flask(__name__)
 
-# Some sample data 
+# Some sample data about coffe options
 coffee_options = [
     {
         'name': 'Cappuccino',
@@ -24,17 +22,38 @@ coffee_options = [
     }
 ]
 
-@app.route('/')
-def index():
-    return render_template('index.html', coffee_options=coffee_options)
+import tkinter as tk
 
-@app.route('/search', methods=['POST'])
-def search():
-    keyword = request.form.get('keyword')
-    filtered_options = [option for option in coffee_options if keyword.lower() in option['name'].lower()]
-    return render_template('index.html', coffee_options=filtered_options)
+class CoffeeConnectApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Coffee Connect")
 
-if __name__ == '__main__':
-    app.run(debug=True)
+        # Create and configure GUI elements
+        self.label = tk.Label(self.root, text="Welcome to Coffee Connect!")
+        self.label.pack()
+
+        self.button_explore = tk.Button(self.root, text="Explore Coffee Options", command=self.explore_coffee)
+        self.button_explore.pack()
+
+        self.button_create_account = tk.Button(self.root, text="Create Account", command=self.create_account)
+        self.button_create_account.pack()
+
+    def explore_coffee(self):
+        # exploring coffee options
+        
+        print("Exploring coffee options...")
+
+    def create_account(self):
+        # creating a user account
+        print("Creating a new account...")
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = CoffeeConnectApp(root)
+    root.mainloop()
+
+
+    
 
 
