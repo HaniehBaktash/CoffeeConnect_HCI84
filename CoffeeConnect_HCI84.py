@@ -40,10 +40,31 @@ class CoffeeConnectApp:
         self.button_create_account.pack()
 
     def explore_coffee(self):
-        # exploring coffee options
-        
+        # exploring coffee options by  creating a new window for displaying coffee options
+        window = tk.Toplevel(self.root)
+        window.title("Coffee Options")
+
+        # Display coffee options in a text box
+        text_box = tk.Text(window, height=10, width=50)
+        text_box.pack()
         print("Exploring coffee options...")
 
+        # add coffee options information to the text box
+
+        for option in coffee_options:
+            name = option['name']
+            coffee_type = option['type']
+            description = option['description']
+            rating = option['rating']
+            text_box.insert(tk.END, f"Name: {name}\n")
+            text_box.insert(tk.END, f"Type: {coffee_type}\n")
+            text_box.insert(tk.END, f"Description: {description}\n")
+            text_box.insert(tk.END, f"Rating: {rating}\n")
+            text_box.insert(tk.END, "----------------\n")
+
+      # Disable editing in the text box
+        text_box.configure(state='disabled')      
+        
     def create_account(self):
         # creating a user account
         print("Creating a new account...")
