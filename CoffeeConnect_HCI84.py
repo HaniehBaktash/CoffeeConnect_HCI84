@@ -51,26 +51,26 @@ class CoffeeConnectApp:
         self.coffee_data = read_coffee_data('coffee_data.csv')
 
     def explore_coffee(self):
-            # Creating a new window for displaying coffee options
-            window = tk.Toplevel(self.root)
-            window.title("Coffee Options")
+        # Creating a new window for displaying coffee options
+        window = tk.Toplevel(self.root)
+        window.title("Coffee Options")
 
-            scrollable_frame = ScrollableFrame(window)
-            scrollable_frame.pack()
+        scrollable_frame = ScrollableFrame(window)
+        scrollable_frame.pack()
 
-            print("Exploring coffee options...") 
+        print("Exploring coffee options...") 
 
-            for data in self.coffee_data:
-                print("Current data:", data)
-                shop_name = data['shop_name']
-                shop_address = data['shop_address']
-                name = data['name']
-                coffee_type = data['type']
-                description = data['description']
-                rating = data['rating']
-                brand = data['brand']
-                ingredient = data['ingredient']
-                image_file = data['image']
+        for data in self.coffee_data:
+            print("Current data:", data)
+            shop_name = data['shop_name']
+            shop_address = data['shop_address']
+            name = data['name']
+            coffee_type = data['type']
+            description = data['description']
+            rating = data['rating']
+            brand = data['brand']
+            ingredient = data['ingredient']
+            image_file = data['image']
             
 
             # I decided to create a sub frame for each coffee option
