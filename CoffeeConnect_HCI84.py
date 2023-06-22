@@ -94,8 +94,11 @@ class CoffeeConnectApp:
             # Disable editing in the text box
             text_box.configure(state='disabled')
 
-            # Display the image I am trying to display an image for each coffee, i couldnt so far!
-           
+        for row in reader:
+            for column, value in row.items():
+                if column not in data_dict:
+                    data_dict[column] = []
+                
             image = Image.open(image_file)
             image = image.resize((200, 200))  # Adjust the size as per your requirement
             photo = ImageTk.PhotoImage(image)
