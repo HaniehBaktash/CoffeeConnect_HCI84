@@ -1,6 +1,7 @@
 import csv
 import tkinter as tk
 from tkinter import ttk
+from PIL import Image, ImageTk
 
 # Create a Scrollable Frame class
 class ScrollableFrame(tk.Frame):
@@ -45,31 +46,32 @@ class CoffeeConnectApp:
         self.button_create_account = tk.Button(self.root, text="Create Account", command=self.create_account)
         self.button_create_account.pack()
 
+
         # Load coffee data
         self.coffee_data = read_coffee_data('coffee_data.csv')
 
     def explore_coffee(self):
-        # Creating a new window for displaying coffee options
-        window = tk.Toplevel(self.root)
-        window.title("Coffee Options")
+            # Creating a new window for displaying coffee options
+            window = tk.Toplevel(self.root)
+            window.title("Coffee Options")
 
-        scrollable_frame = ScrollableFrame(window)
-        scrollable_frame.pack()
+            scrollable_frame = ScrollableFrame(window)
+            scrollable_frame.pack()
 
-        print("Exploring coffee options...")
+            print("Exploring coffee options...") 
 
-        # Add coffee options information to the text box
-        for data in self.coffee_data:
-            print("Current data:", data)
-            shop_name = data['shop_name']
-            shop_address = data['shop_address']
-            name = data['name']
-            coffee_type = data['type']
-            description = data['description']
-            rating = data['rating']
-            brand = data['brand']
-            ingredient = data['ingredient']
-            image_file = data['image']
+            for data in self.coffee_data:
+                print("Current data:", data)
+                shop_name = data['shop_name']
+                shop_address = data['shop_address']
+                name = data['name']
+                coffee_type = data['type']
+                description = data['description']
+                rating = data['rating']
+                brand = data['brand']
+                ingredient = data['ingredient']
+                image_file = data['image']
+            
 
             # I decided to create a sub frame for each coffee option
             sub_frame = ttk.Frame(scrollable_frame.scrollable_frame)
@@ -93,11 +95,17 @@ class CoffeeConnectApp:
             text_box.configure(state='disabled')
 
             # Display the image I am trying to display an image for each coffee, i couldnt so far!
-            image = tk.PhotoImage(file=image_file)
-            image_label = tk.Label(sub_frame, image=image)
-            image_label.image = image  # Keep a reference to the image object to prevent it from being garbage collected
-            image_label.pack(side="right")
+           
+            image = Image.open(image_file)
+            image = image.resize((200, 200))  # Adjust the size as per your requirement
+            photo = ImageTk.PhotoImage(image)
+            image_label = tk.Label(sub_frame, image=photo)
+            image_label.image = photo  # Keep a reference to the image object to prevent it from being garbage collected
+            image_label.pack(side="left")
 
+            print(f"Loading image from: {image_file}")
+
+           
     def create_account(self):
         # Creating a user account I will work on this part more.
         print("Creating a new account...")
