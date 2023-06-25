@@ -87,12 +87,7 @@ class CoffeeConnect:
         self.frame.update_idletasks()
         self.canvas.configure(scrollregion=self.canvas.bbox('all'))     
 
-
-
-
 #read csv file
-
-
 def read_csv_to_dictionary(csv_file_path):
     data_dict = {}
 
