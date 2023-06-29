@@ -43,25 +43,33 @@ class CoffeeConnect:
         self.root.mainloop()
     def create_account(self):
         # Creating a user account I will work on this part more.
-        self.new_account_window = tk.Toplevel(self.root)
-        self.new_account_window.title("Create account")
+        for widget in self.frame.winfo_children():
+            widget.destroy()
 
-        tk.Label(self.new_account_window, text="Email").grid(row=0, column=0)
-        self.email_entry = tk.Entry(self.new_account_window)
+        tk.Label(self.frame, text="Email").grid(row=0, column=0)
+        self.email_entry = tk.Entry(self.frame)
         self.email_entry.grid(row=0, column=1)
 
-        tk.Label(self.new_account_window, text="Password").grid(row=1, column=0)
-        self.password_entry = tk.Entry(self.new_account_window, show="*")
+        tk.Label(self.frame, text="Password").grid(row=1, column=0)
+        self.password_entry = tk.Entry(self.frame, show="*")
         self.password_entry.grid(row=1, column=1)
 
-        submit_button = tk.Button(self.new_account_window, text="Submit", command=self.submit_new_account)
+        submit_button = tk.Button(self.frame, text="Submit", command=self.submit_new_account)
         submit_button.grid(row=2, column=0, columnspan=2)
+
+        self.frame.update_idletasks()
+        self.canvas.configure(scrollregion=self.canvas.bbox('all'))
 
     def submit_new_account(self):
         entered_email = self.email_entry.get()
         entered_password = self.password_entry.get()
         print(f"Entered email: {entered_email}, entered password: {entered_password}")
-        self.new_account_window.destroy()
+
+        for widget in self.frame.winfo_children():
+            widget.destroy()
+
+        self.frame.update_idletasks()
+        self.canvas.configure(scrollregion=self.canvas.bbox('all'))
 
 
     def run(self):
