@@ -80,10 +80,71 @@ class CoffeeConnect:
             widget.destroy()
 
         for img_path, description_dict in zip(self.img_paths, self.descriptions):
+
+            # apply filter: skip this entry if it's rating is not high enough
+            if float(description_dict['rating']) < self.minimum_rating_value.get():
+                continue
+
+            if self.name_value.get()!= "Any":
+                if self.name_value.get().lower() not in description_dict['name'].lower():
+                    continue
+
+            img_path = self.image_folder + "/" + img_path
             img = Image.open(img_path)
             img = img.resize((self.width, self.height), Image.ANTIALIAS)
             photo = ImageTk.PhotoImage(img)
             label = Label(self.frame, image=photo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
             label.image = photo
             label.pack(anchor='center', pady=10)
 
