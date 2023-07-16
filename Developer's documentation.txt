@@ -1,0 +1,45 @@
+# Developer's Guide: CoffeeConnect Application
+
+## Overview
+CoffeeConnect is a command-line interface (CLI) application built in Python. The application is designed to allow users to connect with others based on their coffee preferences.
+
+## Code Structure
+The primary script of the project is `CoffeeConnect_HCI584.py`, which is the entry point of the application. It contains the main functions for the program:
+
+- `start`: Sets up and runs the application.
+- `get_data`: Fetches the coffee data from the data files.
+- `find_matches`: Filters the coffee data based on user preferences and prints the matching users.
+
+## Installation
+While the user's guide covers the basic installation process, it is recommended for developers to create a virtual environment to isolate the dependencies of the project:
+
+1. Create a virtual environment using `python -m venv env`.
+2. Activate the virtual environment.
+3. Install the required libraries using `pip install -r requirements.txt`.
+
+## User Interaction and Code Flow
+On launching the application by running `CoffeeConnect_HCI584.py`, the user is asked to input their coffee preferences via the command line. The application then matches the user with others who share the same coffee preferences.
+
+The flow of control in the code is as follows:
+
+1. `CoffeeConnect_HCI584.py` initializes the application.
+2. The `start` function gets the user's coffee preferences and stores them.
+3. The `get_data` function fetches the coffee data from the data files.
+4. The `find_matches` function is called with the user's coffee preferences and the fetched coffee data. It filters the data and prints the matching users.
+
+## Known Issues and Potential Solutions
+- The application currently only supports exact matching based on user inputs. Future implementations could include fuzzy matching or the ability to match based on similar, rather than identical, coffee preferences.
+
+## Future Work
+- Implement more sophisticated matching algorithms to find users with similar, but not identical, coffee preferences.
+- Transition from a CLI application to a GUI or web application for a more user-friendly interface.
+- Add the ability for users to connect with their matches directly through the application.
+
+## Ongoing Deployment/Development
+If the project is to be expanded in the future, there are a few considerations:
+
+1. **Unit tests:** It's recommended to write unit tests for the various functions to ensure that new changes don't break existing functionality.
+2. **Version control:** Using version control (e.g., Git) would allow tracking changes and easier collaboration if more developers join the project.
+3. **Code documentation:** Continue to maintain and update the code documentation as new features are added or changes are made.
+
+Remember, these are general guidelines, and the best practices would depend on the specific requirements and constraints of your project.
