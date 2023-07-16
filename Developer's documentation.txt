@@ -31,15 +31,15 @@ The flow of control in the code is as follows:
 - The application currently only supports exact matching based on user inputs. Future implementations could include fuzzy matching or the ability to match based on similar, rather than identical, coffee preferences.
 
 ## Future Work
-- Implement more sophisticated matching algorithms to find users with similar, but not identical, coffee preferences.
-- Transition from a CLI application to a GUI or web application for a more user-friendly interface.
+- Using more sophisticated matching algorithms to find users with similar, but not identical, coffee preferences.
+- Transition to a web application for a more user-friendly interface.
 - Add the ability for users to connect with their matches directly through the application.
 
 ## Ongoing Deployment/Development
-If the project is to be expanded in the future, there are a few considerations:
+ there are a few considerations for the future:
 
-1. **Unit tests:** It's recommended to write unit tests for the various functions to ensure that new changes don't break existing functionality.
-2. **Version control:** Using version control (e.g., Git) would allow tracking changes and easier collaboration if more developers join the project.
-3. **Code documentation:** Continue to maintain and update the code documentation as new features are added or changes are made.
+1. Write unit tests for the various functions to ensure that new changes don't break existing functionality.
+2. Using version control (e.g., Git) would allow tracking changes and easier collaboration if more developers join the project.
+3. Continue to maintain and update the code documentation as new features are added or changes are made.
+4. Adding more features such as location for each coffee
 
-Remember, these are general guidelines, and the best practices would depend on the specific requirements and constraints of your project.
