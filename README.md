@@ -1,7 +1,8 @@
 
 # CoffeeConnect Application
 ![image_2023-07-20_13-21-43.png](image/image_2023-07-20_13-21-43.png)
-    ## Description
+
+## Description
 CoffeeConnect is a GUI application that helps users browse and filter a list of coffee options. The application provides filters such as minimum rating, name, and type of coffee. The coffee information is displayed next to its corresponding image for a better user experience.
 
 ## Setup and Installation
@@ -42,5 +43,5 @@ This project is under the MIT license.
 
 Include some screenshots of the application here.
 
-![main page](image.png)
-![serach page](image-1.png)
+![main page](image/image.png)
+![01.PNG](image/01.PNG)
