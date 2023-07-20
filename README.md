@@ -1,5 +1,5 @@
 
-#CoffeeConnect Application
+# CoffeeConnect Application
 
 ## Description
 
@@ -34,6 +34,7 @@ CoffeeConnect is a GUI application that helps users browse and filter a list of 
 
 4. The application will now display the coffee options that match the filters, along with their images and other details.
    Exaple of filtering setting with no results:
+   
 ![noresults](image/noresults.png)
 
 ## Common Errors and Troubleshooting
