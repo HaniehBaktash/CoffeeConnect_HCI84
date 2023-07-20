@@ -26,9 +26,12 @@ CoffeeConnect is a GUI application that helps users browse and filter a list of 
     ![Firstpage](image/Firstpage.png)
 2. You will first see a welcome page with a 'Start' button. Click the 'Start' button to proceed.
 3. You will now see filters for minimum rating and name. Input your preferred filters and click 'Run filter'.
+    
     For example: chosing filter tea and espresso screenshots
-    ![[filter](image/Filter.png)
-    ![filtertea](image/Filtertea.png)
+![Filter](image/Filter.png)
+
+![filtertea](image/Filtertea.png)
+
 4. The application will now display the coffee options that match the filters, along with their images and other details.
    Exaple of filtering setting with no results:
 ![noresults](image/noresults.png)
