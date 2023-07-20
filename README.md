@@ -21,7 +21,7 @@ CoffeeConnect is a GUI application that helps users browse and filter a list of 
 
 ## Usage
 
-1. Run the main script with `[Title](<Python CoffeeConnect_HCI584.py.py>)`.
+1. Run the main script with `[Python CoffeeConnect_HCI584](<Python CoffeeConnect_HCI584.py.py>)`.
     This is what users see when run the application:
     ![Firstpage](image/Firstpage.png)
 2. You will first see a welcome page with a 'Start' button. Click the 'Start' button to proceed.
