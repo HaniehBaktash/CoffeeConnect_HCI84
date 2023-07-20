@@ -1,8 +1,8 @@
 
 # CoffeeConnect Application
-![image_2023-07-20_13-21-43.png](image/image_2023-07-20_13-21-43.png)
 
 ## Description
+
 CoffeeConnect is a GUI application that helps users browse and filter a list of coffee options. The application provides filters such as minimum rating, name, and type of coffee. The coffee information is displayed next to its corresponding image for a better user experience.
 
 ## Setup and Installation
@@ -21,10 +21,18 @@ CoffeeConnect is a GUI application that helps users browse and filter a list of 
 
 ## Usage
 
-1. Run the main script with `[python main](CoffeeConnect_HCI84.py).py`.
+1. Run the main script with `[Title](<Python CoffeeConnect_HCI584.py.py>)`.
+    This is what users see when run the application:
+   ![image_2023-07-20_13-21-43.png](image/image_2023-07-20_13-21-43.png)
+
 2. You will first see a welcome page with a 'Start' button. Click the 'Start' button to proceed.
 3. You will now see filters for minimum rating and name. Input your preferred filters and click 'Run filter'.
+    For example: chosing filter tea and espresso screenshots
+    ![[filter](image/Filter.png)
+    ![filtertea](image/Filtertea.png)
 4. The application will now display the coffee options that match the filters, along with their images and other details.
+   Exaple of filtering setting with no results:
+![noresults](image/Noresults.png)
 
 ## Common Errors and Troubleshooting
 
