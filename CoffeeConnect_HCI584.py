@@ -37,7 +37,7 @@ class CoffeeConnect:
         self.start_button = Button(self.root, text="Start", command=self.show_main_app)
         self.start_button.pack()
 
-    # Define function to display the main app
+    # Define function to display the main app the user clicks the "Start" button
     def show_main_app(self):
         # Remove the welcome page elements from the root window
         self.welcome_image_label.pack_forget()
