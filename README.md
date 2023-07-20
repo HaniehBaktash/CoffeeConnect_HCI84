@@ -47,9 +47,4 @@ If you encounter an issue with the image not loading, make sure the image file i
 
 This project is under the MIT license.
 
-## Screenshots
 
-Include some screenshots of the application here.
-
-![main page](image/image.png)
-![01.PNG](image/01.PNG)
