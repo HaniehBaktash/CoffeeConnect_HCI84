@@ -54,6 +54,7 @@ The show_coffee_Options() method retrieves coffee data using the description_dic
 
 ## Future Work
 
+- To add more data to the application, the CSV file needs to be updated with new coffee entries and their attributes. The application will dynamically adjust to the new data upon each execution, allowing users to view additional coffee options seamlessly.
 - Using more sophisticated matching algorithms to find users with similar, but not identical, coffee preferences.
 - Transition to a web application for a more user-friendly interface.
 - Add the ability for users to connect with their matches directly through the application.
@@ -63,7 +64,6 @@ The show_coffee_Options() method retrieves coffee data using the description_dic
  there are a few considerations for the future:
 
 1. Write unit tests for the various functions to ensure that new changes don't break existing functionality.
-2. To add more data to the application, the CSV file needs to be updated with new coffee entries and their attributes. The application will dynamically adjust to the new data upon each execution, allowing users to view additional coffee options seamlessly.
-3. Using version control (e.g., Git) would allow tracking changes and easier collaboration if more developers join the project.
-4. Continue to maintain and update the code documentation as new features are added or changes are made.
-5. Adding more features such as location for each coffee
+2. Using version control (e.g., Git) would allow tracking changes and easier collaboration if more developers join the project.
+3. Continue to maintain and update the code documentation as new features are added or changes are made.
+4. Adding more features such as location for each coffee
