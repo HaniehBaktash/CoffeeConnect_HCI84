@@ -2,7 +2,7 @@
 
 ## Overview
 
-CoffeeConnect is a command-line interface (CLI) application built in Python. The application is designed to allow users to connect with others based on their coffee preferences.
+CoffeeConnect is a GUI application built in Python using Tkinter. The application allows users to explore a list of coffee options, apply filters based on their preferences, mark favorite coffees, and place orders. This guide provides an overview of the code structure, user interaction, and potential future improvements
 
 ## Code Structure
 
