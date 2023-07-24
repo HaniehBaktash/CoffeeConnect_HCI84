@@ -6,7 +6,7 @@ CoffeeConnect is a command-line interface (CLI) application built in Python. The
 
 ## Code Structure
 
-The primary script of the project is `CoffeeConnect_HCI584.py`, which is the entry point of the application. It contains the main functions for the program:
+The primary script of the project is `Run Python CoffeeConnect_HCI584.py`, which is the entry point of the application. It contains the main functions for the program:
 
 - `start`: Sets up and runs the application.
 - `get_data`: Fetches the coffee data from the CSV file.
@@ -37,7 +37,7 @@ The filtering process is managed by the show_coffee_Options() method. It iterate
 
 `Application Startup`:
 
-When the CoffeeConnect_HCI584.py script is executed, it initializes the CoffeeConnect class, which creates the GUI window with a welcome page. The user is greeted with a welcome message and an option to start the main app.
+When the Run Python CoffeeConnect_HCI584.py script is executed, it initializes the CoffeeConnect class, which creates the GUI window with a welcome page. The user is greeted with a welcome message and an option to start the main app.
 
 `Main App Initialization`:
 Upon clicking the "Start" button, the show_main_app() method is triggered. This method sets up the filter section, including the rating, name, and type input fields. Additionally, it creates a canvas to display coffee options and a scrollbar for navigation.
@@ -48,16 +48,29 @@ The user can input filtering criteria through the rating, name, and type fields.
 `Displaying Coffee Options`:
 The show_coffee_Options() method retrieves coffee data using the description_dict, and the data is filtered based on user input. The matching coffee options are displayed in the canvas with their corresponding images and descriptions.
 
+`Marking Favorite Coffees`:
+Users can mark their favorite coffees by clicking the "Favorite" button next to each coffee option. The "Favorite" button turns into "Unfavorite" when a coffee is marked. Users can also access their list of favorite coffee options by clicking the "Favorite Coffee" button.
+
+`Placing Coffee Orders`:
+To place an order, users can click the "Order" button next to their desired coffee option. The application confirms the successful coffee order with a message.
+
 ## Known Issues and Potential Solutions
 
 - The application currently only supports exact matching based on user inputs. Future implementations could include fuzzy matching or the ability to match based on similar, rather than identical, coffee preferences.
 
 ## Future Work
 
-- To add more data to the application, the CSV file needs to be updated with new coffee entries and their attributes. The application will dynamically adjust to the new data upon each execution, allowing users to view additional coffee options seamlessly.
-- Using more sophisticated matching algorithms to find users with similar, but not identical, coffee preferences.
-- Transition to a web application for a more user-friendly interface.
-- Add the ability for users to connect with their matches directly through the application.
+Adding More Data:
+To add more data to the application, update the CSV file with new coffee entries and their attributes. The application will dynamically adjust to the new data upon each execution, allowing users to view additional coffee options seamlessly.
+
+Enhanced Matching Algorithms:
+Consider using more sophisticated matching algorithms to find users with similar, but not identical, coffee preferences. This would provide more accurate and relevant coffee suggestions.
+
+Transition to Web Application:
+Explore transitioning the application into a web application for a more user-friendly and accessible interface. This could increase the reach and usability of CoffeeConnect.
+
+Direct Connection with Users:
+Add the ability for users to connect with their coffee matches directly through the application. This could facilitate coffee enthusiasts in sharing recommendations and building a coffee community.
 
 ## Ongoing Deployment/Development
 
@@ -67,3 +80,7 @@ The show_coffee_Options() method retrieves coffee data using the description_dic
 2. Using version control (e.g., Git) would allow tracking changes and easier collaboration if more developers join the project.
 3. Continue to maintain and update the code documentation as new features are added or changes are made.
 4. Adding more features such as location for each coffee
+
+## Conclusion
+
+CoffeeConnect is a delightful and user-friendly application that caters to coffee enthusiasts' preferences. With its intuitive interface and efficient filtering mechanism, users can easily find their perfect cup of coffee and connect with like-minded coffee lovers. The ongoing development and future enhancements will ensure that CoffeeConnect remains a go-to platform for coffee enthusiasts worldwide.
