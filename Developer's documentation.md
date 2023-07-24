@@ -3,7 +3,9 @@
 ## Overview
 
 CoffeeConnect is a GUI application built in Python using Tkinter. The application allows users to explore a list of coffee options, apply filters based on their preferences, mark their favorite coffees, and place orders. This guide provides an overview of the code structure, user interaction, and potential future improvements.
-![image_2023-07-22_17-30-28](https://github.com/HaniehBaktash/CoffeeConnect_HCI84/assets/133709586/87d4a7fc-4253-4ebb-b987-7cb668eb4b56)
+
+![image](https://github.com/HaniehBaktash/CoffeeConnect_HCI84/assets/133709586/3813a609-d1a9-425b-88fd-2e6ba536fcba)
+
 
 
 
